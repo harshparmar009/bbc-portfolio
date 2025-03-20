@@ -25,9 +25,9 @@ const CertificatePage = () => {
 
       {/* Gallery Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-        <Image src="/images/bbc-service.png" alt="Award 1" width={200} height={200} className="rounded-md shadow" />
-        <Image src="/images/bbc-free.png" alt="Award 2" width={200} height={200} className="rounded-md shadow" />
-        <Image src="/images/bbc-energy.png" alt="Award 3" width={200} height={200} className="rounded-md shadow" />
+        <Image src="/logo/ISRO.jpg" alt="Award 1" width={200} height={200} className="rounded-md shadow" />
+        <Image src="/logo/CERTI.jpeg" alt="Award 2" width={200} height={200} className="rounded-md shadow" />
+        <Image src="/logo/ROHS.jpg" alt="Award 3" width={200} height={200} className="rounded-md shadow" />
       </div>
 
       {/* Information Section */}

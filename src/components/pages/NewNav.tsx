@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, ChevronDown, Scroll } from 'lucide-react'
 import { Link as ScrollLink, Element } from "react-scroll";
-import solarLogo from '../../../public/logo/bbc-logo.jpg';
+import solarLogo from '../../../public/logo/new-bbc.png';
 
 
 
@@ -36,7 +36,7 @@ export default function Navbar() {
             alt="Logo"
             width={100}
             height={100}
-            className="w-14 rounded-2xl mb-[10px]"
+            className="w-[72px] rounded-2xl mb-[10px]"
             
           />
             </Link>

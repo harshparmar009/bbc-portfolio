@@ -8,7 +8,6 @@ import { Link as ScrollLink, Element } from "react-scroll";
 import solarLogo from '../../../public/logo/new-bbc.png';
 
 
-
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isAboutOpen, setIsAboutOpen] = useState(false)
@@ -36,7 +35,7 @@ export default function Navbar() {
             alt="Logo"
             width={100}
             height={100}
-            className="w-14 rounded-2xl mb-[10px]"
+            className="w-[80px] mb-[8px]"
             
           />
             </Link>

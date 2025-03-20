@@ -11,7 +11,7 @@ export default function WhyYouChooseUs() {
             <h3 className="text-4xl md:text-right font-bold mb-6">Award-winning renewable energy solutions</h3>
             <div className='flex justify-center items-center md:justify-end'>
             <Image
-              src="/images/bbc-life.png"
+              src="/images/W.jpeg"
               alt="Award ceremony"
               width={400}
               height={300}
@@ -24,17 +24,17 @@ export default function WhyYouChooseUs() {
               {
                 icon: <Trophy className="w-8 h-8 text-orange-500" />,
                 title: "POINT - 1",
-                description: "Daily Generation per KWp - 4units | Electric Rate - ₹7 per unit"
+                description: "Average Daily Generation per KWp - 4units | Electric Rate - ₹6.5 per unit"
               },
               {
                 icon: <DollarSign className="w-8 h-8 text-orange-500" />,
                 title: "POINT - 2",
-                description: "Anual Energy Production - 4 units/day x 365 days = 1,460 units per day"
+                description: "Average Annual Energy Production - 4 units/day x 365 days = 1,460 units per day"
               },
               {
                 icon: <Sun className="w-8 h-8 text-orange-500" />,
                 title: "POINT - 3",
-                description: "Anual Saving - 1,460 units/year x ₹7 per units = ₹10,220 per year"
+                description: "Average Annual Saving - 1,460 units/year x ₹7 per units = ₹10,220 per year"
               }
             ].map((point, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md p-4 flex items-start space-x-4">

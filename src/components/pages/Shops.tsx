@@ -9,7 +9,12 @@ export default function Shops() {
   return (
 
     <main className="relative mt-[calc(100vh-7rem)] container  mx-auto px-4 py-12">
-      <h1 className="text-3xl text-[#283895] font-bold text-center mb-6">- Bussiness -</h1>
+      <h1 className="text-3xl text-[#283895] font-bold text-center mb-6">- COMPANY PROFILE -</h1>
+      <p className="text-center text-lg mb-12 max-w-6xl mx-auto ">
+M/S BBC INDIA GROUP IS IN THE BUSINESS OF SOLAR PV MODULES AND DESIGNING OF RENEWABLE ENERGY SYSTEMS FOR MORE THAN TEN YEARS. THE COMPANY IS INVOLVED IN THE
+BUSINESS OF MEDIA, CONSULTANCY, SOLAR PHOTOVOLTAIC MODULES, PV SYSTEMS, AND SOLAR THERMAL SYSTEMS. OUR PRODUCTS ARE CERTIFIED BY MANY NATIONAL AND
+INTERNATIONAL AGENCIES. WE PROVIDE TOP INTERNATIONAL BRANDS WITH INTERNATIONAL QUALITY. WE ARE CERTIFIED BY ISO 9001:2015,ROHS AND CE.
+      </p>
       <h1 className="text-5xl text-[#283895] font-bold text-center mb-6"> What We Do </h1>
       <p className="text-center text-lg mb-12 max-w-3xl mx-auto ">
       Our innovative solar solutions empower homes, businesses, and communities to embrace renewable energy and reduce 

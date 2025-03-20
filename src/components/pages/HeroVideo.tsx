@@ -10,11 +10,11 @@ const items = [
   },
   {
     src: '/logo/wind-pic.jpg',
-    text: 'Energy Plantation To Your Smart Home',
+    text: 'Energy Plantation To Your Smart Home & Bussiness',
   },
   {
     src: '/logo/sun-pic.jpg',
-    text: 'Environment Friendly Energy Plantation To Your Smart Home',
+    text: 'Environment Friendly Energy Plantation To Your Smart Home & Bussiness',
   },
 ]
 

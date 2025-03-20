@@ -1,83 +1,71 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from 'next/image';
+import Link from 'next/link';
+import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8 ">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Contact Section */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-4">Contact</h3>
-            <p>Mob: +91 7015515121 / +91 9991916016</p>
-            {/* <p>Web: www.http//bbcindiagroup.com </p> */}
-            <p>Mail: bbcindiagrouphr@gmail.com</p>
-          </div>
+    <footer className="bg-gray-900 text-white py-4 pt-[25px] px-5 md:px-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+        
+        {/* Left Section */}
+        <div>
+          <Image
+            src="/logo/new-bbc.png"
+            alt="BBC India Group Logo"
+            width={1000}
+            height={1000}
+            className="w-[120px] mb-3"
+          />
+          <p className="text-sm text-gray-300 leading-relaxed">
+            M/S BBC INDIA GROUP is engaged in Solar PV Modules and Renewable Energy System Design for over a decade. We deal in media, consultancy, solar photovoltaic modules, PV systems, and solar thermal systems. Our products are certified by national and international agencies, including ISO 9001:2015, ROHS, and CE.
+          </p>
+        </div>
 
-          {/* Services Section */}
+        {/* Middle Section */}
+        <div className="grid grid-cols-1 gap-5 md:ml-8">
+          <h3 className="font-semibold text-2xl text-white">Quick Links</h3>
+          <ul className="space-y-2 text-gray-300 text-lg">
+            <li><Link href="/about" className="hover:text-gray-400">About Us</Link></li>
+            <li><Link href="/products" className="hover:text-gray-400">Our Products</Link></li>
+            <li><Link href="/services" className="hover:text-gray-400">Our Services</Link></li>
+            <li><Link href="/gallery" className="hover:text-gray-400">Gallery</Link></li>
+            <li><Link href="/certificate" className="hover:text-gray-400">Certificates</Link></li>
+            <li><Link href="/contact" className="hover:text-gray-400">Contact Us</Link></li>
+          </ul>
+        </div>
+
+        {/* Right Section */}
+        <div className='flex h-full items-center justify-between flex-col'> 
+         <div>
+         <h3 className="font-semibold text-2xl text-white">Contact Us</h3>
+          <p className="mt-3 text-lg text-gray-300">📧 Mail: bbcindiagrouphr@gmail.com</p>
           
 
-          {/* Image Grid */}
-          <div className="grid grid-cols-3 gap-2">
-            
-    {
-            [
-  {
-    title: 'Solar Panels Services',
-    description: 'Expert installation and maintenance of solar panels for homes and businesses.',
-    image: '/images/bbc-service.png',
-  },
-  {
-    title: 'Life with Solar',
-    description: 'Transition to renewable energy for a sustainable future.',
-    image: '/images/bbc-eco.png',
-  },
-  {
-    title: 'Renewable Energy Source',
-    description: 'Harness the power of the sun for clean, green energy.',
-    image: '/images/bbc-free.png',
-  },
-  {
-    title: 'Free of Cost Energy',
-    description: 'Solar energy is free harness it without limits.',
-    image: '/images/bbc-energy.png',
-  },
-].map((item, index) => (
-              <div key={index} className="bg-gray-700 aspect-square">
-                <Image
-                  src={item.image}
-                  alt={`Image ${index + 1}`}
-                  width={100}
-                  height={100}
-                  className="w-full rounded-md h-full object-cover"
-                />
-              </div>
-            ))}
+          {/* Social Media Icons */}
+          <div className="mt-6 flex space-x-6">
+            <Link href="https://www.facebook.com/bbcindiagroup" target="_blank">
+              <FaFacebookF className="text-white hover:text-blue-500 text-5xl cursor-pointer" />
+            </Link>
+            <Link href="https://wa.me/917015515121" target="_blank">
+              <FaWhatsapp className="text-white hover:text-green-500 text-5xl cursor-pointer" />
+            </Link>
+          </div>
+         </div>
+
+          <div className='flex items-center justify-start gap-4 text-md mt-8'>
+          <Link href="/privacy" className="hover:text-gray-400"> <h3>Privacy Policy</h3></Link>
+          <Link href="/terms" className="hover:text-gray-400"> <h3>Terms & Condition</h3></Link>
           </div>
         </div>
 
-        {/* Question Section */}
-        <div className="mt-8 flex items-center justify-center">
-          <Image
-            src="/logo/bbc-logo.jpg"
-            alt="Company Logo"
-            width={50}
-            height={50}
-            className="mr-4"
-          />
-          <p>Do You Have Any Questions? Then you can call or e-mail us</p>
-        </div>
+      </div>
 
-        {/* Bottom Links */}
-        <div className="mt-8 flex flex-wrap justify-between items-center text-sm">
-          <p> Created by <a href="https://jackinfosoft.com/" className='text-blue-500' >www.jackinfosoft.com</a> </p>
-          <div className="flex space-x-4 mt-4 md:mt-0">
-            <Link href="/terms" className="hover:underline">TERMS & CONDITIONS</Link>
-            <Link href="/privacy" className="hover:underline">PRIVACY POLICY</Link>
-            {/* <Link href="/sitemap" className="hover:underline">SITEMAP</Link> */}
-          </div>
-        </div>
+      {/* Footer Bottom */}
+      <div className="border-t border-gray-700 mt-4 pt-5 text-center text-sm text-gray-400">
+          <p > Created by <span className='hover:text-blue-800'>
+            <Link href='https://jackinfosoft.com/' target="_blank" >www.jackinfosoft.com</Link> 
+            </span> </p>
       </div>
     </footer>
-  )
+  );
 }
